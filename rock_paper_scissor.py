@@ -1,5 +1,7 @@
 from random import randint
 def rockpaperscissor():
+    you=0
+    bot=0
     while True:
 
         print("""
@@ -14,6 +16,7 @@ def rockpaperscissor():
  ___/ / /__/ (__  |__  ) /_/ / /  (__  )                 
 /____/\___/_/____/____/\____/_/  /____/                  """)
         w=input("would you like to continue (y/n)")
+       
         if w.lower()=="n":
             break
         else:
@@ -22,8 +25,6 @@ def rockpaperscissor():
             lib={1:"rock",2:"paper",3:"scissor"}
             b=randint(1,3)
 
-            you=0
-            bot=0
             
             print(f"you choose : {ch}\nbot choose:{lib[b]}")
 
